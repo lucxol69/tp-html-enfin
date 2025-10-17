@@ -1,17 +1,14 @@
-$ma: #a63636;
-
+@charset "UTF-8";
 @keyframes monanimnulle {
-from {
-transform: translateY(-50px);
-color:red;
+  from {
+    transform: translateY(-50px);
+    color: red;
+  }
+  to {
+    transform: translateY(0);
+    color: navy;
+  }
 }
-to {
-transform: translateY(0);
-color:navy;
-}
-}
-
-
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   line-height: 1.5;
@@ -23,11 +20,11 @@ body {
 
 /* Menu de navigation  */
 nav {
-  position: fixed;    
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #b34d4d; 
+  background-color: #b34d4d;
   border-bottom: 1px solid #ddd;
   padding: 8px 0;
   z-index: 1000;
@@ -38,7 +35,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px; /* espace entre les liens */
 }
 
@@ -89,10 +86,11 @@ hr {
 }
 
 img {
-  width: 120px;         
-  height: 120px;        
-  border-radius: 50%;   
-  object-fit: cover;     
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   margin: 10px auto;
 }
@@ -100,12 +98,12 @@ img {
 /* --- Style pour le tableau --- */
 table {
   width: 100%;
-  border-collapse: collapse; 
+  border-collapse: collapse;
 }
 
 th, td {
-  border: 1px solid #9a3c3c; 
-  padding: 8px;               
+  border: 1px solid #9a3c3c;
+  padding: 8px;
   text-align: left;
 }
 
@@ -113,6 +111,7 @@ th {
   background-color: #cc6760;
   font-weight: 600;
 }
+
 #education table {
   width: 100%;
   border-collapse: collapse;
@@ -120,7 +119,7 @@ th {
   font-size: 0.95rem;
 }
 
-#education th, 
+#education th,
 #education td {
   border-bottom: 1px solid #9a3c3c;
   text-align: left;
@@ -133,7 +132,7 @@ th {
 }
 
 #education a {
-  color: $ma;
+  color: #a63636;
   text-decoration: none;
 }
 
@@ -153,27 +152,28 @@ a:hover {
 }
 
 .experience-item {
-  display: inline-flex;      
-  align-items: center;       
-  gap: 4px;                  
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .experience-item img {
-  width: 60px;               
+  width: 60px;
   height: 60px;
-  object-fit: cover;      
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
-  margin: 0;                 
+  margin: 0;
 }
 
 #competences ul {
-  list-style-type: none;  
-  padding: 0;             
+  list-style-type: none;
+  padding: 0;
   margin-top: 10px;
 }
 
 #competences li {
-  margin-bottom: 5px;     
+  margin-bottom: 5px;
   font-size: 1rem;
 }
 
@@ -184,15 +184,15 @@ a:hover {
 }
 
 footer .footer-content {
-  display: flex;            
-  justify-content: space-between; 
-  align-items: center;      
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
 }
 
 footer .adresse {
-  margin: 0; 
+  margin: 0;
 }
 
 footer .contact {
@@ -205,31 +205,22 @@ footer .contact {
   header h1 {
     font-size: 1.6rem;
   }
-
   header p.meta {
     font-size: 0.85rem;
   }
-
   header img {
     width: 80px;
     height: 80px;
   }
-
-  
   footer .footer-content {
     flex-direction: column;
     text-align: center;
     gap: 5px;
   }
-
-  
   nav ul {
-    
     gap: 10px;
   }
-
-  
   nav a {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
